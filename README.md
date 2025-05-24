@@ -15,6 +15,7 @@ RouteMind is an AI-powered route optimization system that calculates the best pa
 ```bash
 git clone https://github.com/AyeshaahKhalid/RouteMind_RouteFinder.git
 cd RouteMind_RouteFinder/src
+```  
 
 ## **AI Techniques Used and Justification**
 
@@ -23,7 +24,7 @@ cd RouteMind_RouteFinder/src
    and time of day.
  - Converts these conditions into fuzzy sets (e.g., low, average, high) using membership functions.
  - Fuzzy rules (IF-THEN statements) define how these inputs affect route cost.
- - output is a dynamic cost value that mimics human reasoning.
+ - Output is a dynamic cost value that mimics human reasoning.
 
 **A* Pathfinding Algorithm:**
  - Finds the most efficient path between two points using heuristic search.
@@ -31,8 +32,7 @@ cd RouteMind_RouteFinder/src
  - Integrated with fuzzy output to adjust edge weights dynamically.
 
 **Justification:**
-  - Real-world navigation is uncertain — fuzzy logic handles that uncertainty intelligently.
-  - A* ensures optimal route selection while fuzzy logic enhances decision-making under real-world 
-    complexity.
-  - The combination provides a smart, adaptive system unlike traditional rigid algorithms.
-
+ - Real-world navigation is uncertain — fuzzy logic handles that uncertainty intelligently.
+ - A* ensures optimal route selection while fuzzy logic enhances decision-making under real-world 
+   complexity.
+ - The combination provides a smart, adaptive system unlike traditional rigid algorithms.
