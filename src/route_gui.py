@@ -50,13 +50,6 @@ def show_result_window(path, cost):
     result_win.geometry("600x400")
     result_win.configure(fg_color=NAVY)
 
-    result_path = "result.png"
-    if os.path.exists(result_path):
-        result_img = Image.open(result_path).resize((600, 400))
-        result_bg = CTkImage(light_image=result_img, dark_image=result_img)
-        label_bg = ctk.CTkLabel(result_win, image=result_bg, text="")
-        label_bg.image = result_bg
-        label_bg.place(x=0, y=0, relwidth=1, relheight=1)
 
     ctk.CTkLabel(result_win, text="Best Route", font=ctk.CTkFont(size=20, weight="bold"),
                  text_color=PEACH).pack(pady=20)
